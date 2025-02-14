@@ -67,3 +67,7 @@ def add_numbers(a, b):
 def sub_numbers(a, b):
     """Returns the difference of two numbers."""
     return a - b
+
+def mult_numbers(a, b):
+    """Returns the product of two numbers."""
+    return a * b
