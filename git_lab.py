@@ -71,3 +71,9 @@ def sub_numbers(a, b):
 def mult_numbers(a, b):
     """Returns the product of two numbers."""
     return a * b
+def sum_positives (arr):
+    sum = 0
+    for num in arr:
+        if num > 0:
+            sum += num
+    return sum
