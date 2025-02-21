@@ -6,7 +6,8 @@ from git_lab import (
     calculate_triangle_area,
     is_prime,
     add_numbers,
-    mult_numbers
+    mult_numbers,
+    sum_positives
 )
 import math
 
@@ -56,6 +57,10 @@ class TestUtils(unittest.TestCase):
     def test_multiply_numbers(self):
         self.assertEqual(mult_numbers(2, 3), 6)
         self.assertEqual(mult_numbers(-1, 1), -1)
+
+    def test_sum_positive_numbers(self):
+        self.assertEqual(sum_positives([2, 3, 0, -1]), 6)
+        self.assertEqual(mult_numbers([-1, 1]), 1)
 
 
 if __name__ == '__main__':
