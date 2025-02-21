@@ -1,0 +1,24 @@
+import unittest #could be a more descriptive file name
+
+def summer(ints): # Could also make this name more descriptive
+    sum= 0 # probs put a space in front of the = and white space below this line
+    for i in ints:
+        if(i > 0): # dont need to use parentheses
+            sum += i # i would make i a more descriptive name
+    return sum
+
+class TestSumPositiveNumbers(unittest.TestCase): # nice tests
+    def test_all_positive(self):
+        self.assertEqual(summer([1, 2, 3, 4, 5]), 15)
+
+    def test_mixed_numbers(self):
+        self.assertEqual(summer([-1, 2, -3, 4, 5]), 11)
+
+    def test_all_negative(self):
+        self.assertEqual(summer([-1, -2, -3, -4]), 0)
+
+if __name__ == '__main__':
+    unittest.main()
+
+
+# This was very helpful because I need to have better naming conventions for my methods and variables!
